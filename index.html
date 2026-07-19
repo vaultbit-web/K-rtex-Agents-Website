@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0F3D35" />
+<title>Kórtex · Agentes de IA para radiología, radioterapia y física médica</title>
+<meta name="description" content="Instalamos agentes de IA en centros de radiodiagnóstico, radioterapia y física médica de España: atienden cada llamada, llenan la agenda, preparan a los pacientes y documentan el QA. También para clínicas dentales, residencias y clínicas de salud. RGPD por diseño." />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="author" content="Kórtex" />
+<link rel="canonical" href="https://www.kortexagents.com/" />
+<link rel="alternate" hreflang="es-ES" href="https://www.kortexagents.com/" />
+<link rel="alternate" hreflang="x-default" href="https://www.kortexagents.com/" />
+
+<!-- Icons / manifest -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kórtex" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:url" content="https://www.kortexagents.com/" />
+<meta property="og:title" content="Kórtex · Agentes de IA para radiología, radioterapia y física médica" />
+<meta property="og:description" content="Agentes de IA que atienden llamadas, llenan tu agenda, preparan pacientes y documentan el QA. Menos carga para tu equipo. RGPD por diseño." />
+<meta property="og:image" content="https://www.kortexagents.com/og-cover.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Kórtex · Ingeniería de agentes de IA para imagen diagnóstica, radioterapia y física médica" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kórtex · Agentes de IA para radiología, radioterapia y física médica" />
+<meta name="twitter:description" content="Agentes de IA que atienden llamadas, llenan tu agenda, preparan pacientes y documentan el QA. Menos carga para tu equipo. RGPD por diseño." />
+<meta name="twitter:image" content="https://www.kortexagents.com/og-cover.jpg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Preload LCP hero image -->
+<link rel="preload" as="image" href="assets/linac-bunker.webp" fetchpriority="high" />
+
+<link rel="stylesheet" href="kortex-exp.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.kortexagents.com/#org",
+      "name": "Kórtex",
+      "url": "https://www.kortexagents.com/",
+      "logo": "https://www.kortexagents.com/icon-512.png",
+      "image": "https://www.kortexagents.com/og-cover.jpg",
+      "description": "Ingeniería de agentes de IA para el sector sociosanitario en España: imagen diagnóstica, oncología radioterápica, física médica, clínicas dentales, residencias de mayores y clínicas de salud.",
+      "email": "hola@kortexagents.com",
+      "areaServed": { "@type": "Country", "name": "España" },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "ventas",
+        "email": "hola@kortexagents.com",
+        "availableLanguage": ["es"]
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.kortexagents.com/#service",
+      "name": "Kórtex · Agentes de IA clínica",
+      "url": "https://www.kortexagents.com/",
+      "provider": { "@id": "https://www.kortexagents.com/#org" },
+      "areaServed": { "@type": "Country", "name": "España" },
+      "availableLanguage": ["es"],
+      "knowsAbout": ["Radiodiagnóstico","Radioterapia","Física médica","Dosimetría","RIS","HIS","PACS","TPS","DICOM","HL7 FHIR","Automatización de citas","Reducción de inasistencias","IA local","Procesamiento local de datos clínicos","Soberanía del dato","IA on-premise","Edge AI sanitario","Clínicas dentales","Seguimiento de presupuestos dentales","Residencias de mayores","Comunicación con familias","Fisioterapia","Adherencia al tratamiento"],
+      "slogan": "Tu equipo decide. Los agentes ejecutan.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Agentes de IA por vertical",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentes de IA para imagen diagnóstica", "url": "https://www.kortexagents.com/agentes.html", "description": "Agenda multimodalidad (TC, RM, mamografía, ecografía, rayos), preparación y contrastes confirmados, aviso de informe y recuperación de huecos." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentes de IA para oncología radioterápica", "url": "https://www.kortexagents.com/agentes.html", "description": "Coordinación de simulación y planificación, acompañamiento del paciente sesión a sesión y registro de toxicidades con alerta a enfermería." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentes de IA para física médica y dosimetría", "url": "https://www.kortexagents.com/agentes.html", "description": "Registros de QA diario, mensual y anual estructurados, documentación de planes lista para revisión y trazabilidad para auditorías." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentes de IA para clínicas dentales", "url": "https://www.kortexagents.com/agentes-ia-clinicas-dentales.html", "description": "Captación de primeras visitas, seguimiento de presupuestos no aceptados, recordatorio de revisiones e higienes y calendario de contenido." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentes de IA para residencias de mayores", "url": "https://www.kortexagents.com/agentes-ia-residencias.html", "description": "Atención a familias, admisiones y lista de espera, transparencia con encuestas y gestión de avisos entre turnos." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentes de IA para clínicas de fisioterapia y salud", "url": "https://www.kortexagents.com/agentes-ia-clinicas-salud.html", "description": "Agenda confirmada con recuperación de huecos, adherencia al tratamiento y primeras visitas atendidas al momento." } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.kortexagents.com/#website",
+      "url": "https://www.kortexagents.com/",
+      "name": "Kórtex",
+      "inLanguage": "es-ES",
+      "publisher": { "@id": "https://www.kortexagents.com/#org" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.kortexagents.com/" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- NAV -->
+<nav class="nav" aria-label="Navegación principal">
+  <a class="logo" href="#" aria-label="Kórtex, inicio"><span class="word">k<em>ó</em>rtex</span></a>
+  <ul>
+    <li><a href="#agentes">Agentes</a></li>
+    <li><a href="#verticales">Para quién</a></li>
+    <li><a href="/centro-de-operaciones.html">Demo en directo</a></li>
+    <li><a href="/como-trabajamos.html">Cómo trabajamos</a></li>
+    <li><a href="#seguridad">Seguridad</a></li>
+  </ul>
+  <a class="primary magnetic" href="#contacto">Auditoría gratuita <span class="arr" aria-hidden="true">→</span></a>
+  <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE MENU (overlay) -->
+<div id="mobileMenu" class="mobile-menu" hidden>
+  <div class="mm-top">
+    <span class="logo"><span class="word">k<em>ó</em>rtex</span></span>
+    <button class="mm-close" type="button" aria-label="Cerrar menú"><span></span><span></span></button>
+  </div>
+  <nav class="mm-links" aria-label="Menú">
+    <a href="#agentes"><span class="mm-n">01</span>Agentes</a>
+    <a href="#verticales"><span class="mm-n">02</span>Para quién</a>
+    <a href="/centro-de-operaciones.html"><span class="mm-n">03</span>Demo en directo</a>
+    <a href="/como-trabajamos.html"><span class="mm-n">04</span>Cómo trabajamos</a>
+    <a href="#seguridad"><span class="mm-n">05</span>Seguridad</a>
+  </nav>
+  <a class="btn dark mm-cta" href="#contacto">Reservar auditoría gratuita <span class="arr" aria-hidden="true">→</span></a>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<header class="xhero">
+  <img class="bg" src="assets/linac-bunker.webp" width="1800" height="1005" fetchpriority="high" decoding="async" alt="Acelerador lineal (LINAC) en sala de tratamiento de radioterapia">
+  <div class="veil"></div>
+  <div class="container content">
+    <h1 class="rise" style="animation-delay:.12s" id="heroTitle">Agentes de IA que <em>potencian</em> tu centro <span class="under">día y noche.</span></h1>
+    <svg class="ecg" viewBox="0 0 230 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 15 H62 L72 15 L80 4 L92 26 L100 15 H228"></path></svg>
+    <p class="sub rise" style="animation-delay:.24s">Instalamos <b>agentes de IA</b> en centros de radiodiagnóstico, radioterapia y física médica: atienden cada llamada, llenan tu agenda, preparan a tus pacientes y documentan tu QA. <b>Menos tarea repetitiva para tu equipo, más tiempo para el paciente.</b></p>
+    <div class="ctas rise" style="animation-delay:.36s">
+      <a class="btn light magnetic" href="#contacto">Reservar auditoría gratuita <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn ghost on-dark" href="#agentes">Ver qué hacen</a>
+    </div>
+  </div>
+</header>
+
+<!-- PILLARS (flip cards) -->
+<section class="pillars" id="pilares">
+  <div class="container">
+    <h2 class="pillars-title" id="statement">Ingeniería de agentes de IA <em>solo para el sector sociosanitario.</em></h2>
+    <div class="pill-grid">
+
+      <button class="flip" type="button" aria-pressed="false" aria-label="Agentes, no bots. Pulsa para saber más">
+        <span class="flip-inner">
+          <span class="flip-face flip-front">
+            <span class="pill-ico"><img class="ico3d" src="assets/icons-3d/agente-objetivo.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="flip-h">Agentes, no bots</span>
+            <span class="flip-sub">Objetivos, no guiones</span>
+            <span class="flip-hint"><span class="hh">Girar</span><span class="ht">Toca para ver</span> <span aria-hidden="true">↻</span></span>
+          </span>
+          <span class="flip-face flip-back">
+            <span class="flip-h">Agentes, no bots</span>
+            <p>Cada agente persigue una métrica concreta y usa tus herramientas reales. Si no puede resolver, escala a tu equipo con todo el contexto.</p>
+          </span>
+        </span>
+      </button>
+
+      <button class="flip" type="button" aria-pressed="false" aria-label="Especialistas en tu sector. Pulsa para saber más">
+        <span class="flip-inner">
+          <span class="flip-face flip-front">
+            <span class="pill-ico"><img class="ico3d" src="assets/icons-3d/especializacion.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="flip-h">Especialistas en tu sector</span>
+            <span class="flip-sub">Solo imagen, RT y física médica</span>
+            <span class="flip-hint"><span class="hh">Girar</span><span class="ht">Toca para ver</span> <span aria-hidden="true">↻</span></span>
+          </span>
+          <span class="flip-face flip-back">
+            <span class="flip-h">Especialistas en tu sector</span>
+            <p>Hablamos tu idioma: prescriptores, huecos de TC, contrastes, máscaras, QA del LINAC. Nada de plantillas de otros sectores.</p>
+          </span>
+        </span>
+      </button>
+
+      <button class="flip" type="button" aria-pressed="false" aria-label="Operamos, no entregamos. Pulsa para saber más">
+        <span class="flip-inner">
+          <span class="flip-face flip-front">
+            <span class="pill-ico"><img class="ico3d" src="assets/icons-3d/operacion-continua.webp" alt="" loading="lazy" decoding="async"></span>
+            <span class="flip-h">Operamos, no entregamos</span>
+            <span class="flip-sub">Mejora continua, mes a mes</span>
+            <span class="flip-hint"><span class="hh">Girar</span><span class="ht">Toca para ver</span> <span aria-hidden="true">↻</span></span>
+          </span>
+          <span class="flip-face flip-back">
+            <span class="flip-h">Operamos, no entregamos</span>
+            <p>Desplegamos, medimos y mejoramos cada mes, con panel compartido y reunión de resultados. Y le devolvemos horas a tu equipo.</p>
+          </span>
+        </span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ ES UN AGENTE (explicación simple) -->
+<section class="explain" id="que-es">
+  <div class="container">
+    <div class="ex-wrap">
+      <span class="eyebrow" style="justify-content:center">Antes de nada</span>
+      <h2>¿Qué es un <em>agente de IA?</em></h2>
+      <p class="big-p">Piensa en un <b>empleado digital</b> con nombre propio, una única misión y unas tareas concretas. No es un chatbot que contesta de todo: <b>Vega</b> solo se ocupa de que ninguna llamada se pierda y <b>Clara</b>, de que el archivo de calidad esté siempre al día. Trabajan dentro de las herramientas que tu centro ya usa, no toman ninguna decisión clínica y avisan a tu equipo en cuanto algo requiere una persona.</p>
+      <div class="ex-trio">
+        <div class="ex-card">
+          <span class="n">01 · Un objetivo</span>
+          <h3>Cada agente persigue una sola métrica</h3>
+          <p>Uno llena la agenda, otro documenta el QA, otro cuida a tus derivadores. Nada de asistentes genéricos que hacen de todo un poco.</p>
+        </div>
+        <div class="ex-card">
+          <span class="n">02 · Tus herramientas</span>
+          <h3>Trabaja dentro de tus sistemas de siempre</h3>
+          <p>Se conecta a tu agenda y a tus canales reales: teléfono, WhatsApp, web. Tu centro no cambia de programa ni de forma de trabajar.</p>
+        </div>
+        <div class="ex-card">
+          <span class="n">03 · Supervisión humana</span>
+          <h3>Tu equipo siempre tiene la última palabra</h3>
+          <p>Lo clínico y lo delicado pasa a una persona, con todo el contexto. Cada acción queda registrada y puedes revisarla cuando quieras.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENTS -->
+<section class="agents" id="agentes">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Seis agentes.<br>Un <em>servicio clínico</em> que no se detiene.</h2>
+      </div>
+      <p class="lead">Cada uno se ocupa de una parte del trabajo repetitivo. Tu equipo decide; los agentes ejecutan.</p>
+    </div>
+    <div class="stack">
+      <article class="scard peeked" style="--i:0">
+        <div class="ph"><img src="assets/recepcion.webp" width="1800" height="1005" loading="lazy" decoding="async" alt="Recepción de un centro de imagen médica"></div>
+        <div class="tx">
+          <h3><em>Vega</em>, agente de citación</h3>
+          <p>Contesta cada llamada y cada WhatsApp y llena tu agenda, a cualquier hora del día.</p>
+          <a class="scard-link" href="/agente-citacion.html">Ver ficha <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <img class="scard-peek" src="assets/mascotas/vega-720.webp" width="540" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true">
+      </article>
+      <article class="scard peeked" style="--i:1">
+        <div class="ph"><img src="assets/mascara.webp" width="1800" height="1005" loading="lazy" decoding="async" alt="Máscara termoplástica de inmovilización para radioterapia"></div>
+        <div class="tx">
+          <h3><em>Teo</em>, agente de preparación</h3>
+          <p>Le explica a cada paciente cómo prepararse, para que la prueba salga bien a la primera.</p>
+          <a class="scard-link" href="/agente-preparacion.html">Ver ficha <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <img class="scard-peek" src="assets/mascotas/teo-720.webp" width="540" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true">
+      </article>
+      <article class="scard dark peeked" style="--i:2">
+        <div class="ph"><img src="assets/linac-bunker.webp" width="1800" height="1005" loading="lazy" decoding="async" alt="Sala de tratamiento de radioterapia con acelerador lineal"></div>
+        <div class="tx">
+          <h3><em>Alma</em>, agente de acompañamiento RT</h3>
+          <p>Acompaña al paciente en cada sesión de radioterapia y avisa a enfermería si algo va mal.</p>
+          <a class="scard-link" href="/agente-acompanamiento-rt.html">Ver ficha <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <img class="scard-peek" src="assets/mascotas/alma-720.webp" width="540" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true">
+      </article>
+      <article class="scard peeked" style="--i:3">
+        <div class="ph"><img src="assets/consulta.webp" width="1800" height="1005" loading="lazy" decoding="async" alt="Consulta con un médico prescriptor"></div>
+        <div class="tx">
+          <h3><em>Marco</em>, agente de prescriptores</h3>
+          <p>Mantiene al día al médico que deriva, para que confíe y te mande más pacientes.</p>
+          <a class="scard-link" href="/agente-prescriptores.html">Ver ficha <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <img class="scard-peek" src="assets/mascotas/marco-720.webp" width="540" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true">
+      </article>
+      <article class="scard peeked" style="--i:4">
+        <div class="ph"><img src="assets/plan-dosimetrico.webp" width="1800" height="1005" loading="lazy" decoding="async" alt="Plan dosimétrico 3D sobre TC"></div>
+        <div class="tx">
+          <h3><em>Clara</em>, agente de dosimetría &amp; QA</h3>
+          <p>Ordena y guarda toda la documentación de calidad, lista para cualquier inspección.</p>
+          <a class="scard-link" href="/agente-dosimetria-qa.html">Ver ficha <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <img class="scard-peek" src="assets/mascotas/clara-720.webp" width="540" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true">
+      </article>
+      <article class="scard peeked" style="--i:5">
+        <div class="ph"><img src="assets/exterior.webp" width="1800" height="1005" loading="lazy" decoding="async" alt="Exterior de un centro médico moderno"></div>
+        <div class="tx">
+          <h3><em>Lola</em>, agente de reputación</h3>
+          <p>Consigue reseñas y hace que más pacientes te encuentren en tu zona.</p>
+          <a class="scard-link" href="/agente-reputacion.html">Ver ficha <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <img class="scard-peek" src="assets/mascotas/lola-720.webp" width="540" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true">
+      </article>
+    </div>
+    <div class="agents-cta">
+      <a class="btn light magnetic" href="/agentes.html">Ver cada agente en detalle <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- TEASER DEL CENTRO DE OPERACIONES -->
+<section class="mc-teaser" id="demo-directo">
+  <div class="container">
+    <div class="mct-grid">
+      <div>
+        <span class="eyebrow">Demo en directo</span>
+        <h2>Míralos <em>trabajar</em> en directo.</h2>
+        <p class="mct-p">Cada agente con su misión y cada acción con su hora, en un solo panel. Entra en el centro de operaciones, elige tu sector (imagen, dental, residencias o salud) y toca a cualquier agente para ver qué hace. Datos simulados; patrón de trabajo real.</p>
+        <a class="btn dark magnetic" href="/centro-de-operaciones.html">Abrir el centro de operaciones <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+      <div class="mct-screen">
+        <img class="mct-peek left" src="assets/mascotas/vega-360.webp" width="270" height="360" loading="lazy" decoding="async" alt="Vega, la agente de citación de Kórtex">
+        <img class="mct-peek right" src="assets/mascotas/olmo-360.webp" width="270" height="360" loading="lazy" decoding="async" alt="Olmo, el agente de supervisión de Kórtex">
+        <div class="screen">
+          <div class="screen-bar"><i></i><i></i><i></i><span class="live">Demo simulada</span></div>
+          <div class="screen-body" id="mctStream">
+            <div class="mc-ev ok">
+              <div class="ev-top"><span class="ev-agent">Vega · Agente de citación</span><span class="ev-time">09:42</span></div>
+              <p>Cancelación detectada en TC: ha ofrecido el hueco a la lista de espera.</p>
+              <span class="ev-chip">Hueco recuperado</span>
+            </div>
+            <div class="mc-ev">
+              <div class="ev-top"><span class="ev-agent">Teo · Agente de preparación</span><span class="ev-time">09:40</span></div>
+              <p>Ha enviado la preparación personalizada de una RM con contraste.</p>
+            </div>
+            <div class="mc-ev">
+              <div class="ev-top"><span class="ev-agent">Olmo · Agente de supervisión</span><span class="ev-time">09:38</span></div>
+              <p>Ha reunido los partes de la mañana en el informe de dirección.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VERTICALS -->
+<section class="verticals" id="verticales">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 style="color:var(--bone)">Un equipo para <em>cada</em> tipo de centro.</h2>
+      </div>
+      <p class="lead" style="color:rgba(242,239,232,0.7)">El mismo sistema de agentes, ajustado al flujo, al vocabulario y a las personas de cada sector. Elige el tuyo y conoce a su equipo.</p>
+    </div>
+    <div class="vert-grid four">
+      <article class="vert reveal">
+        <div class="team-minis" aria-hidden="true"><span><img src="assets/mascotas/vega-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/teo-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/alma-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/marco-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/clara-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/lola-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span></div>
+        <h3>Imagen, radioterapia y física médica</h3>
+        <ul>
+          <li>Vega llena la agenda y Teo prepara a cada paciente</li>
+          <li>Alma acompaña la radioterapia sesión a sesión</li>
+          <li>Marco cuida a tus prescriptores y Clara documenta el QA</li>
+          <li>Lola hace visible la calidad que ya tienes</li>
+        </ul>
+        <a class="vlink" href="/agentes.html">Conocer al equipo <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+      <article class="vert reveal">
+        <div class="team-minis" aria-hidden="true"><span><img src="assets/mascotas/hugo-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/nora-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/leo-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/dario-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span></div>
+        <h3>Clínicas dentales</h3>
+        <ul>
+          <li>Hugo responde al momento a cada interesado</li>
+          <li>Nora hace el seguimiento de cada presupuesto</li>
+          <li>Leo llena la agenda de revisiones e higienes</li>
+          <li>Darío prepara tu calendario de contenido</li>
+        </ul>
+        <a class="vlink" href="/agentes-ia-clinicas-dentales.html">Conocer al equipo <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+      <article class="vert reveal">
+        <div class="team-minis" aria-hidden="true"><span><img src="assets/mascotas/celia-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/martin-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/alba-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/unai-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span></div>
+        <h3>Residencias de mayores</h3>
+        <ul>
+          <li>Celia atiende a cada familia con calma y sin prisas</li>
+          <li>Martín acompaña admisiones y lista de espera</li>
+          <li>Alba escucha a las familias y se lo cuenta a dirección</li>
+          <li>Unai persigue cada aviso entre turnos</li>
+        </ul>
+        <a class="vlink" href="/agentes-ia-residencias.html">Conocer al equipo <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+      <article class="vert reveal">
+        <div class="team-minis" aria-hidden="true"><span><img src="assets/mascotas/jara-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/gael-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span><span><img src="assets/mascotas/julia-360.webp" width="270" height="360" loading="lazy" decoding="async" alt=""></span></div>
+        <h3>Clínicas de salud</h3>
+        <ul>
+          <li>Jara confirma sesiones y recupera huecos de cancelación</li>
+          <li>Gael acompaña los ejercicios entre sesiones</li>
+          <li>Julia convierte el «ya llamaré» en primera visita</li>
+          <li>Para fisioterapia, podología y clínicas similares</li>
+        </ul>
+        <a class="vlink" href="/agentes-ia-clinicas-salud.html">Conocer al equipo <span class="arr" aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section class="security" id="seguridad">
+  <div class="container">
+    <div class="wrap">
+      <div class="sec-grid">
+        <div>
+          <h2>Datos de salud.<br>Tolerancia <em>cero</em> a la improvisación.</h2>
+          <p class="intro">Inviertes en equipos de primer nivel para tus pacientes; nosotros invertimos en proteger sus datos a la misma altura. Los agentes corren sobre <b>estaciones de IA de grado profesional que instalamos en tu centro</b> y procesan en local. El cumplimiento no es un anexo del contrato: es la arquitectura del sistema.</p>
+          <p style="margin-top:18px"><a href="/ia-local-clinica.html" style="color:var(--mint);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(199,230,221,.45);padding-bottom:2px">IA local y soberanía del dato →</a></p>
+        </div>
+        <div class="sec-items">
+          <div class="sec-item">
+            <span class="i3"><img class="ico3d" src="assets/icons-3d/datos-ue.webp" alt="" loading="lazy" decoding="async"></span>
+            <h4>Procesamiento local en tu centro</h4>
+            <p>Los agentes se ejecutan sobre estaciones de IA de grado profesional instaladas en tu propia red. La inferencia con datos clínicos sensibles ocurre en local, sin depender de APIs en la nube.</p>
+          </div>
+          <div class="sec-item">
+            <span class="i3"><img class="ico3d" src="assets/icons-3d/fisica-medica.webp" alt="" loading="lazy" decoding="async"></span>
+            <h4>Soberanía del dato</h4>
+            <p>Tu centro mantiene el control del dato. Local primero: lo que deba salir permanece en infraestructura europea. Sin usar datos clínicos para entrenar modelos de terceros.</p>
+          </div>
+          <div class="sec-item">
+            <span class="i3"><img class="ico3d" src="assets/icons-3d/rgpd.webp" alt="" loading="lazy" decoding="async"></span>
+            <h4>RGPD y LOPDGDD por diseño</h4>
+            <p>Tratamiento conforme a RGPD y LOPDGDD, contrato de encargado de tratamiento y coordinación con tu DPD desde la fase de diseño.</p>
+          </div>
+          <div class="sec-item">
+            <span class="i3"><img class="ico3d" src="assets/icons-3d/trazabilidad.webp" alt="" loading="lazy" decoding="async"></span>
+            <h4>Trazabilidad total</h4>
+            <p>Cada acción de cada agente queda registrada: qué hizo, cuándo, con qué dato y quién lo supervisó. Auditable en cualquier momento.</p>
+          </div>
+          <div class="sec-item">
+            <span class="i3"><img class="ico3d" src="assets/icons-3d/supervision-humana.webp" alt="" loading="lazy" decoding="async"></span>
+            <h4>Supervisión humana</h4>
+            <p>Los agentes no toman decisiones clínicas. Todo lo sanitario escala a tu equipo; lo administrativo opera con límites explícitos.</p>
+          </div>
+          <div class="sec-item">
+            <span class="i3"><img class="ico3d" src="assets/icons-3d/dosimetria-qa.webp" alt="" loading="lazy" decoding="async"></span>
+            <h4>Cumplimiento a tu medida</h4>
+            <p>El procesamiento local es una decisión de arquitectura, no un sello automático. Acordamos contigo los controles de seguridad, el cifrado y el protocolo de supervisión antes de tratar ningún dato.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-final" id="contacto">
+  <div class="container">
+    <div class="cta-wrap">
+      <img class="bgimg" src="assets/mlc.webp" width="1800" height="1005" loading="lazy" decoding="async" alt="">
+      <div class="inner">
+        <span class="cta-pill"><span class="tag">Agenda abierta</span> Auditoría de flujos · 30 min con dirección</span>
+        <h2>Tu centro, con una<br><em>plantilla que no duerme.</em></h2>
+        <p>Cuéntanos cómo trabaja hoy tu servicio de imagen, radioterapia o física médica. En dos semanas te devolvemos un mapa de flujos y un plan de agentes priorizado por impacto. Sin coste y sin compromiso.</p>
+        <form class="cta-form" action="https://formsubmit.co/TU_ALIAS_DE_FORMSUBMIT" method="POST">
+          <input type="hidden" name="_subject" value="Nueva solicitud de auditoria - Kortex">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://www.kortexagents.com/gracias.html">
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="text" name="nombre" placeholder="Nombre y centro" required>
+          <input type="email" name="email" placeholder="Tu email" required>
+          <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+          <textarea name="mensaje" placeholder="Cuéntanos brevemente cómo trabaja hoy tu servicio"></textarea>
+          <button class="btn light magnetic" type="submit">Reservar auditoría gratuita <span class="arr" aria-hidden="true">&rarr;</span></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="top">
+      <div class="brand-block">
+        <div class="biglogo">k<em>ó</em>rtex</div>
+        <p>Ingeniería de agentes de IA para el sector sociosanitario: imagen diagnóstica, radioterapia, clínicas dentales, residencias y clínicas de salud en España.</p>
+      </div>
+      <div>
+        <h3>Producto</h3>
+        <ul>
+          <li><a href="#agentes">Agentes</a></li>
+          <li><a href="/agentes.html">Ver en detalle</a></li>
+          <li><a href="/centro-de-operaciones.html">Demo en directo</a></li>
+          <li><a href="/asistente-llamadas-24-7-clinicas.html">Asistente de llamadas 24/7</a></li>
+          <li><a href="/recepcionista-virtual-ia-clinicas.html">Recepcionista virtual con IA</a></li>
+          <li><a href="/ia-llave-en-mano-clinicas.html">IA llave en mano</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Sectores</h3>
+        <ul>
+          <li><a href="/agentes.html">Imagen y radioterapia</a></li>
+          <li><a href="/agentes-ia-clinicas-dentales.html">Clínicas dentales</a></li>
+          <li><a href="/agentes-ia-residencias.html">Residencias de mayores</a></li>
+          <li><a href="/agentes-ia-clinicas-salud.html">Clínicas de salud</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compañía</h3>
+        <ul>
+          <li><a href="/como-trabajamos.html">Cómo trabajamos</a></li>
+          <li><a href="#seguridad">Seguridad</a></li>
+          <li><a href="/ia-local-clinica.html">IA local y soberanía del dato</a></li>
+          <li><a href="/como-trabajamos.html#faq">FAQ</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/aviso-legal.html">Aviso legal</a></li>
+          <li><a href="/privacidad.html">Privacidad</a></li>
+          <li><a href="/cookies.html">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Kórtex. Todos los derechos reservados.</span>
+      <span>Madrid · Barcelona · Valencia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<a class="mobile-cta" id="mobileCta" href="#contacto">Reservar auditoría gratuita <span class="arr" aria-hidden="true">→</span></a>
+
+<script src="kortex.js" defer></script>
+
+</body>
+</html>

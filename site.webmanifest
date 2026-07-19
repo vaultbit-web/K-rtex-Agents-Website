@@ -1,0 +1,15 @@
+{
+  "name": "Kórtex — Agentes de IA clínica",
+  "short_name": "Kórtex",
+  "description": "Ingeniería de agentes de IA para centros de imagen diagnóstica, radioterapia y física médica en España.",
+  "lang": "es-ES",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2EFE8",
+  "theme_color": "#0F3D35",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" }
+  ]
+}
